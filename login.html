@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <style>
+.parent{
+
+width: 350px;
+height:500px;
+
+margin: auto;
+
+text-align: center;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+background-color: white;
+padding:50px;
+border-radius:15px;
+}
+body{
+    background: rgb(81, 127, 205);
+    background: linear-gradient(90deg, rgba(81, 127, 205, 1) 14%, rgba(81, 127, 205, 1) 45%, rgba(134, 72, 174, 1) 96%);
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+
+
+}
+.input{
+margin: 31px auto;
+/* width: 90%; */
+border-bottom: 1px solid silver;
+padding-top: 10px;
+padding-bottom: 5px;
+
+}
+.input input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background:transparent ;
+}
+.color{
+    color: blue;
+   
+}
+button{
+
+    padding: 10px 70px 10px 70px;
+    background-color: #A084CF;
+    border: none;
+    color:white;
+    margin-top: 50px;
+    background: rgb(81, 127, 205);
+    background: linear-gradient(90deg, rgba(81, 127, 205, 1) 14%, rgba(81, 127, 205, 1) 45%, rgba(134, 72, 174, 1) 96%);
+
+}
+p{
+    margin-top: 20px;
+}
+
+
+
+
+
+    </style>
+<body>
+    
+<div class="parent">
+
+<h1>LOGIN</h1>
+<div class="input">
+<label for="Email"></label>
+<input id="email" type="text" placeholder="Email">
+</div>
+<div class="input">
+<input id="password" type="password" placeholder="Password">
+</div>
+<button>LOGIN</button>
+
+<p>Forgot <span class="color">Password?</span> </p>
+<p>Don't have an account? <span  class="color">signup</span> </p>
+
+
+</div>
+
+
+</body>
+</head>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",callback)
+    function callback(event){
+        event.preventDefault();
+        let email=document.querySelector("#email").value;
+        let pass=document.querySelector("#password").value;
+       console.log(email);
+       console.log(pass)
+    }
+</script>
