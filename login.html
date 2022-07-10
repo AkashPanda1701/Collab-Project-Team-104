@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <style>
+.parent{
+
+width: 40%;
+height: 500px;
+margin: auto;
+
+text-align: center;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+h1{
+    text-align: center;
+
+
+}
+.input{
+margin: 31px auto;
+width: 80%;
+border-bottom: 1px solid silver;
+padding-top: 10px;
+padding-bottom: 5px;
+
+}
+.input input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background:transparent ;
+}
+.color{
+    color: blue;
+   
+}
+button{
+
+    padding: 10px 70px 10px 70px;
+    background-color: #A084CF;
+    border: none;
+
+}
+p{
+    margin-top: 20px;
+}
+
+@media screen and (min-width:500px) and (max-width:1020px){
+    .parent{
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        width: 100%;
+}
+.input{
+    width: 100%;
+    height :auto;
+}
+}
+@media screen and (min-width:100px) and (max-width:500px){
+    .parent{
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        width: 100%;
+}
+
+.input{
+    width: 100%;
+    height:auto;
+}
+
+
+}
+
+
+    </style>
+<body>
+    
+<div class="parent">
+
+<h1>LOGIN</h1>
+<div class="input">
+<label for="Email"></label>
+<input id="email" type="text" placeholder="Email">
+</div>
+<div class="input">
+<input id="password" type="password" placeholder="Password">
+</div>
+<button>LOGIN</button>
+
+<p>Forgot <span class="color">Password?</span> </p>
+<p>Don't have an account? <span  class="color">signup</span> </p>
+
+
+</div>
+
+
+</body>
+</head>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",callback)
+    function callback(event){
+        event.preventDefault();
+        let email=document.querySelector("#email").value;
+        let pass=document.querySelector("#password").value;
+       console.log(email);
+       console.log(pass)
+    }
+</script>
